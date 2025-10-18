@@ -1,12 +1,54 @@
 # Project Chronos: The AI Archeologist
 
-## Project Description
-Project Chronos is a digital archaeology tool that reconstructs fragmented and obscure text from historical internet sources. The application uses Google Gemini AI to intelligently fill in missing context, decode old internet slang, and explain cultural references that are no longer widely understood. It then automatically searches the web to provide relevant sources that help explain the reconstructed text, creating a comprehensive "Reconstruction Report" for each input.
-The system is designed to help preserve and understand digital history by making old forum posts, chat logs, and web content accessible to modern readers.
-## Features
+## Student Name(s) and ID(s)
+- Vunnam Ramcharan [SE25UDSC070] : Programming and GitHub Management
+- Yuvraj Visen [SE25UCAM033] : Team Leading and Optimizing
+- Utkrisht Pathak [SE25UCAM052] : Programming
+- Ananya Pajini [SE25UCAM057] : Documentation and Optimizing
 
-- AI-Powered Text Reconstruction: Uses Google Gemini to decode slang and fill in contextual gaps
-- Automated Web Search: Searches for relevant sources to explain cultural references
-- Comprehensive Reports: Generates detailed reports comparing original and reconstructed text
-- Report Export: Automatically saves reports to text files
-- Simple CLI Interface: Easy-to-use command-line interface
+## Project Description
+Project Chronos: The AI Archeologist is an application that reconstructs, analyses, and interprets fragmented or partial text artifacts using AI-assisted techniques. Given partially damaged or incomplete text (for example, archaeological inscriptions, damaged manuscripts, or fragmented transcripts), the application attempts to infer and reconstruct missing segments, provide confidence estimates, and offer contextual commentary to help researchers and students interpret recovered text.
+
+## Features
+- Accepts fragmented text input and attempts automated reconstruction.
+- Uses Google Gemini AI API key for model-based inference.
+- Prints reconstructed text and optional contextual links to refer to.
+- Simple command-line interface for quick experimentation.
+
+## Setup Instructions
+Follow these steps to set up the project on a new machine.
+
+Prerequisites:
+- Python installed. Check with:
+  ```
+  python --version
+  ```
+- Git installed.
+
+1. Clone the repository
+   ```
+   git clone https://github.com/ramcharan46/Project-Chronos.git
+   cd Project-Chronos
+   ```
+
+2. Install required libraries and dependencies
+   - If a requirements.txt file exists:
+     ```
+     pip install -r requirements.txt
+     ```
+
+3. Set up API keys
+   - Create a `.env` file in the project root.
+   - Add your Google Gemini API key as:
+     ```
+     GEMINI_API_KEY=your_google_gemini_api_key_here
+     ```
+
+## Usage Guide
+Basic usage (example command-line):
+
+- Example: Run the main script with a fragment to reconstruct
+  ```
+  python main.py "i loved it, i gotta go cya l8r!"
+  ```
+---
